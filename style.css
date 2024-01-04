@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: inherit;
+    display: inline-block;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border: 0;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.containre {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddddf1;
+
+  background-image: radial-gradient(#9095e3 1.6px, transparent 1.6px),
+    radial-gradient(#9095e3 1.6px, #ddddf1 1.6px);
+  background-size: 64px 64px;
+  background-position: 0 0, 32px 32px;
+}
+
+/* .light{
+    display: flex;
+    position: absolute;
+    top: 2rem;
+    font-size: 25px ;
+    gap : 1rem
+}
+.lights-label{
+    width: 4.5rem;
+height: 2.2rem;
+background-color: #9095e3;
+display: block;
+border-radius: 1.5rem;
+margin: 5px;
+transition: .3s;
+cursor: pointer;
+}
+
+.lights-label::after{
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #fff;
+    display: block;
+    border-radius: 50%;
+    padding: .2rem;
+    margin: .3rem;
+    transition: .3s;
+}
+
+
+
+.checkbox-input:checked + .lights-label{
+background-color: rgb(115, 118, 118);
+}
+.checkbox-input:checked + .lights-label::after{
+background-color: aquamarine;
+transform: translatex(2.3rem);
+
+}
+
+
+.checkbox-input{
+display: none;
+
+} */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 30rem;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.top {
+  background-color: #ddddf1;
+
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #ddddf1 15px
+    ),
+    repeating-linear-gradient(#9095e355, #9095e3);
+  height: 10rem;
+}
+
+.midle {
+  margin: 20px auto;
+  
+  z-index: 1;
+text-align: center;
+  margin-top: -60px;
+}
+
+.personsl-img {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  border: 3px solid white;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding: 5px 10px;
+}
+
+h1 ,h2{
+    font-weight: 600;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid black;
+
+}
+
+.column{
+/* margin: 10px; */
+padding: 10px;
+font-size: 30px;
+}
+
+#center-col{
+    border-left: 1px  solid black;
+    border-right: 1px  solid black;
+    padding: 10px 25px;
+    
+}
+
+.fa-facebook, .fa-facebook-messenger, .fa-linkedin {
+    color: blue;
+}
+
+.fa-twitter{
+    color: rgb(134, 203, 246);
+}
+
+.fa-whatsapp{
+    color: rgb(45, 242, 45);
+}
